@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>registracia</title>
+ </head>
+ <body>
+    <form id="form" style="border: solid; height: 1100px;width:430px" action="check.php">
+        <div>
+            <p><p style="font-size: 22px;">Личная информация.</p>
+             <label for="familia">Фамилия</label>
+             <input required type="text" name="familia" id="familia" required pattern="[А-Яа-яЁё]+" placeholder="Иванов">
+             <span style="color:red;">*</span>
+            </p>
+             <p>
+             <label for="name">Имя</label>
+             <input required type="text" name="name" id="name" required pattern="[А-Яа-яЁё]+" placeholder="Иван">
+             <span style="color:red;">*</span>
+            </p> 
+            <p>
+            <label for="otch">Отчество</label>
+            <input type="text" name="otch" id="otch" required pattern="[А-Яа-яЁё]+" placeholder="Иванович">
+            </p>
+        </div>
+        <div>
+            <p style="font-size: 22px;">Общая информация.</p>
+            <select required name="pol" id="pol">
+               <option selected="select">Ваш пол</option>
+               <option>Мужчина</option>
+               <option>Женщина</option>
+            </select>
+           <span style="color:red;">*</span>
+           <p>Укажите цвет глаз: <input type="color" name="bg" value="#000000">
+            <input required type="submit" value="Выбрать"></p>
+            <p>Укажите дату рождения: <input type="date" name="date">
+            <input type="submit" value="Выбрать"><span style="color:red;">*</span></p>
+            <p>Укажите возраст: <input type="number" name="number" min="18" max="100">
+            <input required type="submit" value="Выбрать"><span style="color:red;">*</span></p>
+        </div>
+        <div>
+            <p style="font-size: 22px;">Контактная информация.</p>
+            <p><label>Место рождения (Область, город)</label>
+                <select class="ui-textfield ui-textfield-system sa-error-field" style="display: inline-block;" data-spm-anchor-id="a2g0s.8850659.0.i3.65914c4dIuqAMd"><option value="">--Please select--</option><option value="Saratov Oblast">Saratov Oblast</option><option value="Adygeya respublika">Adygeya respublika</option><option value="Altay respublika">Altay respublika</option><option value="Altayskiy kray">Altayskiy kray</option><option value="Amurskaya oblast">Amurskaya oblast</option><option value="Arkhangelskaya oblast">Arkhangelskaya oblast</option><option value="Astrakhanskaya oblast">Astrakhanskaya oblast</option><option value="Bashkortostan respublika">Bashkortostan respublika</option><option value="Belgorodskaya oblast">Belgorodskaya oblast</option><option value="Bryanskaya oblast">Bryanskaya oblast</option><option value="Buryatiya respublika">Buryatiya respublika</option><option value="Chechen republic">Chechen republic</option><option value="Chelyabinskaya oblast">Chelyabinskaya oblast</option><option value="Chukotka autonomous okrug">Chukotka autonomous okrug</option><option value="Chuvash Republic">Chuvash Republic</option><option value="Dagestan respublika">Dagestan respublika</option><option value="Evreyskaya avtonomnaya oblast">Evreyskaya avtonomnaya oblast</option><option value="Hakasiya respublika">Hakasiya respublika</option><option value="Hanty-mansiyskiy avtonomnyy okrug - yugra">Hanty-mansiyskiy avtonomnyy okrug - yugra</option><option value="Ingushetiya respublika">Ingushetiya respublika</option><option value="Irkutskaya oblast">Irkutskaya oblast</option><option value="Ivanovskaya oblast">Ivanovskaya oblast</option><option value="Kabardino-Balkar republic">Kabardino-Balkar republic</option><option value="Kaliningradskaya oblast">Kaliningradskaya oblast</option><option value="Kalmykiya respublika">Kalmykiya respublika</option><option value="Kaluzhskaya oblast">Kaluzhskaya oblast</option><option value="Kamchatskiy kray">Kamchatskiy kray</option><option value="Karachay-Cherkess republic">Karachay-Cherkess republic</option><option value="Kareliya respublika">Kareliya respublika</option><option value="Kemerovskaya oblast">Kemerovskaya oblast</option><option value="Khabarovskiy kray">Khabarovskiy kray</option><option value="Kirovskaya oblast">Kirovskaya oblast</option><option value="Komi respublika">Komi respublika</option><option value="Kostromskaya oblast">Kostromskaya oblast</option><option value="Krasnodarskiy kray">Krasnodarskiy kray</option><option value="Krasnoyarskiy kray">Krasnoyarskiy kray</option><option value="Kurganskaya oblast">Kurganskaya oblast</option><option value="Kurskaya oblast">Kurskaya oblast</option><option value="Leningradskaya oblast">Leningradskaya oblast</option><option value="Lipetskaya oblast">Lipetskaya oblast</option><option value="Magadanskaya oblast">Magadanskaya oblast</option><option value="Mariy el respublika">Mariy el respublika</option><option value="Mordoviya respublika">Mordoviya respublika</option><option value="Moscow">Moscow</option><option value="Moskovskaya oblast">Moskovskaya oblast</option><option value="Murmanskaya oblast">Murmanskaya oblast</option><option value="Nenets autonomous okrug">Nenets autonomous okrug</option><option value="Nizhegorodskaya oblast">Nizhegorodskaya oblast</option><option value="Novgorodskaya oblast">Novgorodskaya oblast</option><option value="Novosibirskaya oblast">Novosibirskaya oblast</option><option value="Omsk Oblast">Omsk Oblast</option><option value="Orenburgskaya oblast">Orenburgskaya oblast</option><option value="Orlovskaya oblast">Orlovskaya oblast</option><option value="Penzenskaya oblast">Penzenskaya oblast</option><option value="Permskiy kray">Permskiy kray</option><option value="Primorskiy kray">Primorskiy kray</option><option value="Pskov Oblast">Pskov Oblast</option><option value="Rostovskaya oblast">Rostovskaya oblast</option><option value="Ryazanskaya oblast">Ryazanskaya oblast</option><option value="Saha yakutiya respublika">Saha yakutiya respublika</option><option value="Saint Petersburg">Saint Petersburg</option><option value="Sakhalinskaya oblast">Sakhalinskaya oblast</option><option value="Samarskaya oblast">Samarskaya oblast</option><option value="Sevastopol">Sevastopol</option><option value="Severnaya osetiya-alaniya respublika">Severnaya osetiya-alaniya respublika</option><option value="Smolenskaya oblast">Smolenskaya oblast</option><option value="Stavropolskiy kray">Stavropolskiy kray</option><option value="Sverdlovskaya oblast">Sverdlovskaya oblast</option><option value="Tambovskaya oblast">Tambovskaya oblast</option><option value="Tatarstan respublika">Tatarstan respublika</option><option value="Tomskaya oblast">Tomskaya oblast</option><option value="Tulskaya oblast">Tulskaya oblast</option><option value="Tverskaya oblast">Tverskaya oblast</option><option value="Tyumenskaya oblast">Tyumenskaya oblast</option><option value="Tyva respublika">Tyva respublika</option><option value="Udmurt republic">Udmurt republic</option><option value="Ulyanovskaya oblast">Ulyanovskaya oblast</option><option value="Vladimirskaya oblast">Vladimirskaya oblast</option><option value="Volgogradskaya oblast">Volgogradskaya oblast</option><option value="Vologodskaya oblast">Vologodskaya oblast</option><option value="Voronezhskaya oblast">Voronezhskaya oblast</option><option value="Yamal-Nenets autonomous okrug">Yamal-Nenets autonomous okrug</option><option value="Yaroslavskaya oblast">Yaroslavskaya oblast</option><option value="Zabaykalsky krai">Zabaykalsky krai</option><option value="Other">Other</option></select>
+                <p>Город:<input required type="text" placeholder="Москва"><span style="color:red;">*</span></p>
+                <label for="index">Индекс:<input type="index" name="index" id="index" required pattern="[0-9]{6}"><span style="color:red;">*</span></label>
+                <label for="Adress"><p>Домашний адрес:<input type="text" required pattern="[А-Яа-яЁё]+"></label><span style="color:red;">*</span></p>
+                <p>Укажите дату регистрации: <input type="date" name="date">
+                <input type="submit" value="Выбрать"><span style="color:red;">*</span></p>
+            </p>
+            <p>
+                <p>
+                    <label for="tel">Номер телефона:</label>
+                    <input required  type="tel" name="tel" pattern="2[0-9]{3}-[0-9]{3}" placeholder="+7-XXX-XXX-XX-XX" maxlength="14"><span style="color:red;">*</span></p>
+                <p>
+                    <label for="Email">Эл.почта</label>
+                    <input type="email" name="name" id="Email"  required placeholder="example@post.com">
+                    <span style="color:red;">*</span>
+                </p>
+            </p>
+            <p>
+                <label for="file">Загрузите скриншот первой страницы паспорта(.jpg)</label><span style="color:red;">*</span>
+                <input type="file" required accept="image/jpeg">
+            </p>
+            <p><b>Откуда вы узнали о нас?</b></p>
+            <p><input name="dzen" type="radio" value="nedzen">Реклама(баннеры,постеры и т.п)</p>
+            <p><input name="dzen" type="radio" value="dzen">Друзья</p>
+            <p><input name="dzen" type="radio" value="pdzen" checked>Случайно наткнулся</p>
+            <p><input type="submit" value="Выбрать"></p>
+            <p>Галочка на согласие обработку персональных данных<input type="checkbox" ><span style="color:red;">*</span>
+                <p><input type="submit">
+                    <input type="reset">
+                </p>
+            </p>
+        </div>
+    </form>
+</body>
+</html>
